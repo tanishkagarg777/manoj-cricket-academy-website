@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar */
+#navbar {
+    background-color: #ffffffba;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6vh;
+    align-items: center;
+    height: 9vh;
+    position: absolute;
+    z-index: 1;
+    width: 94%;
+}
+
+#nav-part1 a {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    visibility: visible;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#nav-part2 a {
+    color: black;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 0 3vh;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#nav-part2 .active {
+    color: rgb(255 24 24);
+}
+
+#nav-part2 hr {
+    display: none;
+}
+
+#nav-part3 a {
+    color: black;
+    font-size: 19px;
+    padding: 0 1vh;
+    text-decoration: none;
+}
+
+#nav-part3 a:hover,
+#nav-part2 a:hover {
+    cursor: pointer;
+    color: rgb(55, 101, 199);
+}
+
+#nav-burger {
+    position: absolute;
+    right: 9vh;
+    top: 1vh;
+    display: none;
+}
+
+.nav-burger-line {
+    width: 5vh;
+    height: 4px;
+    background-color: black;
+    color: black;
+    margin: 3px 0;
+}
+
+
+
+/* Media */
+@media only screen and (max-width: 850px) {
+    #navbar {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        height: 5vh;
+        transition: ease-out 0.5s;
+        width: 94%;
+        padding: 0 2vh;
+        margin: 0;
+    }
+
+    #nav-part2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        visibility: hidden;
+        margin-top: 2vh;
+    }
+
+    #nav-part2 a {
+        font-size: 20px;
+        padding: 16px 0;
+    }
+
+    #nav-part2 hr {
+        border: 1px solid #3d9f9e29;
+        width: 100%;
+        display: block;
+    }
+
+    #nav-part3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3vh;
+        visibility: hidden;
+    }
+
+    #nav-part3 a {
+        font-size: 22px;
+        padding: 0 3vh;
+        padding-bottom: 3vh;
+    }
+
+    #nav-burger {
+        display: block;
+        right: 3vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #navbar {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #nav-part2 a {
+        font-size: 15px;
+    }
+
+    #nav-part3 a {
+        font-size: 19px;
+    }
+
+    #nav-part1 a {
+        font-size: 17px;
+    }
+
+    #nav-burger {
+        right: 10px;
+    }
+
+    .nav-burger-line {
+        height: 3px;
+        width: 4vh;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #nav-part1 a {
+        font-size: 13px;
+    }
+
+    .nav-burger-line {
+        margin: 2px 0;
+    }
+}

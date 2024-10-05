@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* part 2 */
+#why-us-part2 {
+    margin-bottom: 30vh;
+    margin-top: 20vh;
+}
+
+.why-us-line {
+    background-color: #3765c7;
+    width: 8vh;
+    height: 3px;
+    margin-right: 1vh;
+}
+
+.why-us-heading {
+    margin-left: 20vh;
+    margin-bottom: 10vh;
+}
+
+.why-us-sub-hdng {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.why-us-main-hdng {
+    font-size: 7vh;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+#why-us-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#why-us-main-container p {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 12vh;
+    font-size: 3vh;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+/* media */
+@media screen and (max-width: 950px) {
+    #why-us-part2 {
+        margin-bottom: 20vh;
+    }
+
+    .why-us-main-hdng {
+        font-size: 4vh;
+    }
+
+    .why-us-heading {
+        margin-left: 5vh;
+        margin-bottom: 10vh;
+    }
+
+    .why-us-line {
+        width: 5vh;
+    }
+
+    #why-us-main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("./1.png");
+        background-position: center center;
+        background-size: 100%;
+    }
+
+    #why-us-main-container img {
+        display: none;
+    }
+
+    #why-us-main-container p {
+        font-size: 20px;
+        background-color: white;
+        margin: 0 4vh;
+        margin-bottom: 4vh;
+        border: 2px solid rgba(0, 0, 0, 0.09);
+        padding: 2px 2px;
+        height: 9vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 25vh;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    #why-us-main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("./1.png");
+        background-position: center center;
+        background-size: 100vh;
+        
+        background-repeat: no-repeat;
+        flex-direction: column;
+    }
+
+    #why-us-main-container p {
+        margin-bottom: 1vh;
+        height: 15vh;
+        width: auto;
+        border: none;
+    }
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* part 2 */
+#contact-part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+
+.contact-line {
+    background-color: red;
+    width: 20vh;
+    height: 1vh;
+    margin-top: 2vh;
+}
+
+#contact-part2 h1 {
+    font-size: 6vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact-part2 h3 {
+    font-size: 4vh;
+    padding-top: 6vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact-details {
+    margin-top: 4vh;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* media */
+@media only screen and (max-width: 800px) {
+    #contact-part2 h1 {
+        font-size: 4vh;
+    }
+
+    .contact-line {
+        height: 5px;
+        margin-top: 1vh;
+    }
+
+    #contact-part2 h3 {
+        font-size: 35px;
+        padding-top: 4vh;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #contact-part2 h1 {
+        font-size: 30px;
+    }
+
+    .contact-line {
+        height: 4px;
+    }
+
+    #contact-part2 h3 {
+        font-size: 23px;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+
+    #contact-details {
+        font-size: 16px;
+        margin: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #contact-details {
+        margin: 0;
+    }
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* social */
+#social {
+    height: 45vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(55, 101, 199);
+}
+
+#social h1 {
+    font-size: 6vh;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 40px 0px;
+    text-transform: uppercase;
+    color: white;
+}
+
+#social a span i {
+    font-size: 4vh;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    padding: 3vh 3vh;
+    border-radius: 20vh;
+    margin: 0 1vh;
+}
+
+#social a span i:hover {
+    color: rgb(55, 101, 199);
+    background-color: white;
+}
+
+
+
+/* media */
+@media only screen and (max-width: 800px) {
+    #social h1 {
+        font-size: 3vh;
+    }
+
+    #social a span i {
+        padding: 2vh 2vh;
+        font-size: 3vh;
+    }
+
+    #social {
+        height: 25vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #social {
+        height: 30vh;
+    }
+}

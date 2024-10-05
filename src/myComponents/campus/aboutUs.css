@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* part 2 */
+#campus-part2 {
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 25vh;
+    margin-top: 15vh;
+}
+
+#campus-part2 img {
+    height: 65vh;
+    margin-right: 23vh;
+}
+
+#campus-content-container {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+    margin-left: 20vh;
+}
+
+#campus-line1 {
+    background-color: #3765c7;
+    width: 8vh;
+    height: 3px;
+    margin-right: 1vh;
+}
+
+
+#campus-content-container h4 {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+#campus-content-container h2 {
+    font-size: 8vh;
+    margin-bottom: 7vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+#campus-content-container p {
+    font-size: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    margin-bottom: 6vh;
+}
+
+#campus-content-container h3 {
+    background: #3765c78c;
+    padding: 0;
+    width: 75vh;
+    font-size: 5vh;
+    font-family: 'Montserrat', sans-serif;
+    height: 23vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+/* media */
+@media screen and (max-width: 800px) {
+    #campus-part2 {
+        flex-direction: column;
+        height: auto;
+        margin-bottom: 20vh;
+    }
+    
+    #campus-content-container {
+        margin: auto;
+        width: 80%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    #campus-line1 {
+        width: 6vh;
+    }
+    
+    #campus-content-container h2 {
+        margin-bottom: 2vh;
+        font-size: 4vh;
+    }
+
+    #campus-content-container p {
+        font-size: 19px;
+    }
+
+    #campus-content-container h3 {
+        width: 35vh;
+        font-size: 2vh;
+        padding-left: 2vh;
+        height: 13vh;
+    }
+
+    #campus-part2 img {
+        width: 40vh;
+        height: auto;
+        margin: 0;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+}

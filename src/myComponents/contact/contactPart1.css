@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* part 1 */
+#contact-part1 {
+    background: url(./04.jpg) rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 20vh;
+    border-bottom-right-radius: 20vh;
+}
+
+#contact-part1 h1 {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    position: relative;
+    top: 36vh;
+    font-size: 10vh;
+    font-weight: 900;
+    height: 14vh;
+}
+
+
+/* media */
+@media only screen and (max-width: 800px) {
+    #contact-part1 h1 {
+        font-size: 6vh;
+    }
+
+    #contact-part1 {
+        height: 80vh;
+        border-bottom-left-radius: 10vh;
+        border-bottom-right-radius: 10vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #contact-part1 h1 {
+        font-size: 4vh;
+    }
+
+    #contact-part1 {
+        height: 70vh;
+        border-bottom-left-radius: 6vh;
+        border-bottom-right-radius: 6vh;
+    }
+}

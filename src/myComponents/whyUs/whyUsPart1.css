@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Noto+Sans:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* part 1 */
+#why-us-part1 {
+    background: url(./2.jpeg) rgb(0 0 0 / 0%);
+    background-blend-mode: saturation;
+    background-size: cover;
+    height: 90vh;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 30vh;
+}
+
+#why-us-part1 h1 {
+    position: relative;
+    top: 30vh;
+    left: 20vh;
+    font-size: 10vh;
+    width: 100vh;
+    font-weight: 900;
+    height: 28vh;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 2px 2px red;
+}
+
+#why-us-part1 button {
+    width: 35vh;
+    height: 10vh;
+    position: relative;
+    top: 31vh;
+    left: 20vh;
+    font-size: 19px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    font-weight: 700;
+}
+
+#why-us-part1 button:hover {
+    cursor: pointer;
+    background-color: rgb(55, 101, 199);
+}
+
+
+/* media */
+@media screen and (max-width: 950px) {
+    #why-us-part1 {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #why-us-part1 h1 {
+        left: 2vh;
+        font-size: 5vh;
+        top: 25vh;
+        width: 45vh;
+        height: auto;
+    }
+
+    #why-us-part1 button {
+        left: 2vh;
+        font-size: 19px;
+        width: 17vh;
+        height: 5vh;
+        margin-top: 2vh;
+        top: 26vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #why-us-part1 {
+        background-repeat: no-repeat;
+        background-position-x: 30%;
+    }
+
+    #why-us-part1 h1 {
+        font-size: 4.5vh;
+        width: 39vh;
+    }
+
+    #why-us-part1 button {
+        width: 20vh;
+        height: 6vh;
+    }
+}
