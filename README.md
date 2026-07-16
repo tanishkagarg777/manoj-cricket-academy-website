@@ -57,7 +57,7 @@ Here is a glimpse of how the Manoj Cricket Academy website looks:
 ### Installation & Setup
 ```bash
 # Clone the repository
-git clone [https://github.com/tanishkaagarg613/manoj-cricket-academy-website.git](https://github.com/tanishkaagarg613/manoj-cricket-academy-website.git)
+git clone https://github.com/tanishkaagarg613/manoj-cricket-academy-website
 
 # Navigate into the project directory
 cd manoj-cricket-academy-website
